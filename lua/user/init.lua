@@ -1,2 +1,5 @@
-require("user.options")
-require("user.keymaps")
+-- Load plugin configurations
+require('user.plugins')
+require('user.keymaps')
+require('user.options')
+
