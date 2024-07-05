@@ -1,7 +1,3 @@
-local function clock()
-  return os.date("%H:%M:%S")
-end
-
 return {
   "nvim-lualine/lualine.nvim",
   requires = { "kyazdani42/nvim-web-devicons", opt = true },
@@ -17,10 +13,9 @@ return {
         lualine_a = { "mode" },
         lualine_b = { "branch", "diff", "diagnostics" },
         lualine_c = { "filename" },
-        lualine_w = { "encoding", "fileformat", "filetype" },
-        lualine_x = { "progress" },
-        lualine_y = { "location" },
-        lualine_z = { clock },
+        lualine_x = { "encoding", "fileformat", "filetype" },
+        lualine_y = { "progress" },
+        lualine_z = { "location" },
       },
       inactive_sections = {
         lualine_a = {},
