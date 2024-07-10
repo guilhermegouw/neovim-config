@@ -60,6 +60,16 @@ return {
           },
         },
       })
+      lspconfig.marksman.setup({
+        on_attach = on_attach,
+      })
     end,
+  },
+  {
+    "preservim/vim-markdown",
+    requires = {
+      "godlygeek/tabular",
+    },
+    ft = "markdown",
   },
 }
